@@ -54,6 +54,9 @@ Expect unpaid `GET` → **HTTP 402** with a payment challenge. Hosts on Cloudfla
 
 Shop x402scan origin (canonical): `441bad1b-0ed0-4de6-a552-7f8234d2e501`
 
+| [sigtap Outreach API `/tools/hash`](https://sigtap-outreach-api.sigtap.workers.dev/tools/hash?text=hello) | $0.0005 USDC | Base | x402 | Yes | * | sha256/sha512/CRC32/base64; free /preview on every tool |
+| [sigtap Outreach API `/grade`](https://sigtap-outreach-api.sigtap.workers.dev/grade?subject=Hi&body=Test) | $0.005 USDC | Base | x402 | Yes | * | cold-email grader 0-100 with concrete fixes |
+
 ## Agent job boards
 
 Wallet payout ≠ no KYC. Read each board.
