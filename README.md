@@ -48,6 +48,7 @@ Expect unpaid `GET` → **HTTP 402** with a payment challenge. Hosts on Cloudfla
 |-----|----------------|-------|------|-------|------|-------------|
 | [Spot FX `/fx`](https://api.premiumrewards.vip/fx?from=USD&to=EUR&amount=100) | $0.01 USDC | Base | x402 | Yes | * | ECB-spot-style FX check (Clear-to-Send) |
 | [Pulse `/check`](https://pulse.premiumrewards.vip/check) | $0.005 USDC | Base | x402 | Yes | * | Tiny pre-spend probe before a larger buy |
+| [Base toolbox `/v1/preflight`](https://basetoolbox.cartonpliant.workers.dev/v1/preflight) | $0.10 USDC DeFi checks; $0.01 helpers | Base | x402 | Yes | * | Uniswap v3 swap preflight, leftover allowances, tx explain, transfer check on Base. Free `GET /v1/constants`. |
 | [Shop landing](https://premiumrewards.vip/) | free door | — | — | Yes | * | Human-readable entry; paid paths are the `402`s above |
 
 \* CORS: agent HTTP clients usually do not need browser CORS; treat as n/a for mute agent buyers.
