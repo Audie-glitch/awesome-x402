@@ -48,6 +48,7 @@ Expect unpaid `GET` → **HTTP 402** with a payment challenge. Hosts on Cloudfla
 |-----|----------------|-------|------|-------|------|-------------|
 | [Spot FX `/fx`](https://api.premiumrewards.vip/fx?from=USD&to=EUR&amount=100) | $0.01 USDC | Base | x402 | Yes | * | ECB-spot-style FX check (Clear-to-Send) |
 | [Pulse `/check`](https://pulse.premiumrewards.vip/check) | $0.005 USDC | Base | x402 | Yes | * | Tiny pre-spend probe before a larger buy |
+| [Vend extract `/api/v1/extract`](https://extract.paypercall.dev/api/v1/extract?url=https://example.com) | 0.0001 XNO + 0 network fee | nano:mainnet | x402 | Yes | * | Web extract (HTTP 402 with exact Nano `nano:mainnet` XNO challenge); also check-link, web-search, geoip, nano-info (@ same price tier). Zero-fee settlement, sub-second finality. |
 | [Shop landing](https://premiumrewards.vip/) | free door | — | — | Yes | * | Human-readable entry; paid paths are the `402`s above |
 
 \* CORS: agent HTTP clients usually do not need browser CORS; treat as n/a for mute agent buyers.
