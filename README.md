@@ -49,6 +49,12 @@ Expect unpaid `GET` → **HTTP 402** with a payment challenge. Hosts on Cloudfla
 | [Spot FX `/fx`](https://api.premiumrewards.vip/fx?from=USD&to=EUR&amount=100) | $0.01 USDC | Base | x402 | Yes | * | ECB-spot-style FX check (Clear-to-Send) |
 | [Pulse `/check`](https://pulse.premiumrewards.vip/check) | $0.005 USDC | Base | x402 | Yes | * | Tiny pre-spend probe before a larger buy |
 | [Shop landing](https://premiumrewards.vip/) | free door | — | — | Yes | * | Human-readable entry; paid paths are the `402`s above |
+| [bilbop summarize](https://api.bilbop.org/v1/summarize) | $0.01 USDC | Solana | x402 (POST) | Yes | * | Text summarization for agents; unpaid POST → 402 |
+| [bilbop sol-token-brief](https://api.bilbop.org/v1/sol-token-brief) | $0.01 USDC | Solana | x402 (POST) | Yes | * | Public aggregator token brief by mint |
+| [bilbop sol-mint-info](https://api.bilbop.org/v1/sol-mint-info) | $0.01 USDC | Solana | x402 (POST) | Yes | * | On-chain SPL mint supply/authorities |
+| [bilbop brand-feedback](https://api.bilbop.org/brand-feedback) | $0.50 USDC | Solana | x402 (POST) | Yes | * | Human brand Q&A via WURK (can take minutes) |
+| [bilbop tts](https://api.bilbop.org/v1/tts) | $0.025 USDC | Solana | x402 (POST) | Yes | * | Self-hosted Piper TTS WAV; no ElevenLabs |
+| [bilbop discovery](https://api.bilbop.org/.well-known/x402) | free | — | — | Yes | * | Manifest listing all five paid endpoints |
 
 \* CORS: agent HTTP clients usually do not need browser CORS; treat as n/a for mute agent buyers.
 
