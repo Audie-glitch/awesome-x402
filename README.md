@@ -82,6 +82,7 @@ These are **not** x402 products. They show what agents star right now (skills pa
 - Base USDC contract commonly used by sellers: `0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913`.
 
 ## Contributing
+- [fitze-x402-tools](https://fitze-x402-seller.app.workbuddy.host) — 13 pay-per-call x402 tools on Base USDC ($0.005-$0.01/call, no API key): web_fetch, domain_intel, github_repo, token_intel, repo_diligence, web_brief, stock_quote, free_url_check, usgs_earthquakes, open_meteo_weather, exchange_rates, sec_edgar_search, fda_recalls. Agent-payable via x402; MCP at `/mcp`; discovery at `/.well-known/x402`; payout to `0x0751...` on Base. ([MCP](https://fitze-x402-seller.app.workbuddy.host/mcp) | [Discovery](https://fitze-x402-seller.app.workbuddy.host/.well-known/x402))
 
 1. PR = one live URL + a short blurb you wrote.
 2. Prefer endpoints that return real `402` (or clear docs).
