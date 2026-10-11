@@ -48,6 +48,7 @@ Expect unpaid `GET` → **HTTP 402** with a payment challenge. Hosts on Cloudfla
 |-----|----------------|-------|------|-------|------|-------------|
 | [Spot FX `/fx`](https://api.premiumrewards.vip/fx?from=USD&to=EUR&amount=100) | $0.01 USDC | Base | x402 | Yes | * | ECB-spot-style FX check (Clear-to-Send) |
 | [Pulse `/check`](https://pulse.premiumrewards.vip/check) | $0.005 USDC | Base | x402 | Yes | * | Tiny pre-spend probe before a larger buy |
+| [Open Rails Data Agent `/celo/block`](https://open-rails-data-agent.shablony-pro.workers.dev/celo/block) | $0.0005 USDC | Celo mainnet | x402 v2 | Yes | n/a | Celo block height, with six more read-only routes for gas, balances, transactions, receipts and ERC-8004 metadata. |
 | [Shop landing](https://premiumrewards.vip/) | free door | — | — | Yes | * | Human-readable entry; paid paths are the `402`s above |
 
 \* CORS: agent HTTP clients usually do not need browser CORS; treat as n/a for mute agent buyers.
