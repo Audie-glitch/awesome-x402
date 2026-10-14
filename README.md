@@ -48,6 +48,8 @@ Expect unpaid `GET` → **HTTP 402** with a payment challenge. Hosts on Cloudfla
 |-----|----------------|-------|------|-------|------|-------------|
 | [Spot FX `/fx`](https://api.premiumrewards.vip/fx?from=USD&to=EUR&amount=100) | $0.01 USDC | Base | x402 | Yes | * | ECB-spot-style FX check (Clear-to-Send) |
 | [Pulse `/check`](https://pulse.premiumrewards.vip/check) | $0.005 USDC | Base | x402 | Yes | * | Tiny pre-spend probe before a larger buy |
+| [Clarity chat `/v1/x402/chat/completions`](https://desktop-o99r0sf.tail935fba.ts.net/v1/x402/chat/completions) | $0.001 USDC | Base | x402 | Yes | * | Base mainnet OpenAI-compatible chat via local Ollama; free discovery at `/.well-known/x402`; [docs](https://flipperspectives-crypto.github.io/clarity-docs/) |
+| [Clarity report `/v1/x402/report`](https://desktop-o99r0sf.tail935fba.ts.net/v1/x402/report) | $2 USDC | Base | x402 | Yes | * | Short research/verdict report; same Clarity origin as chat |
 | [Shop landing](https://premiumrewards.vip/) | free door | — | — | Yes | * | Human-readable entry; paid paths are the `402`s above |
 
 \* CORS: agent HTTP clients usually do not need browser CORS; treat as n/a for mute agent buyers.
