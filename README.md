@@ -49,6 +49,7 @@ Expect unpaid `GET` → **HTTP 402** with a payment challenge. Hosts on Cloudfla
 | [Spot FX `/fx`](https://api.premiumrewards.vip/fx?from=USD&to=EUR&amount=100) | $0.01 USDC | Base | x402 | Yes | * | ECB-spot-style FX check (Clear-to-Send) |
 | [Pulse `/check`](https://pulse.premiumrewards.vip/check) | $0.005 USDC | Base | x402 | Yes | * | Tiny pre-spend probe before a larger buy |
 | [Shop landing](https://premiumrewards.vip/) | free door | — | — | Yes | * | Human-readable entry; paid paths are the `402`s above |
+| [BTC Intel `/market`](https://9eouter-0f49c8.abyte.my.id/market) | $0.01 USDC | Base | x402 | Yes | * | Stacks/Bitcoin market intelligence: STX/BTC/USD spot, STX-BTC ratio, live PoX cycle, BTC+Stacks fee tiers, sBTC supply |
 
 \* CORS: agent HTTP clients usually do not need browser CORS; treat as n/a for mute agent buyers.
 
