@@ -78,6 +78,7 @@ These are **not** x402 products. They show what agents star right now (skills pa
 
 ## Tooling
 
+- [Agent Payment Node](https://github.com/nuanu-ai/agent-payment-node) — Local macOS CLI and stdio MCP payment runtime for inspecting x402 offers and preparing EVM purchases for foreground owner approval. MIT-licensed; network and provider fees are separate.
 - Pair Cloudflare Workers (or Node/Hono) with x402 payment middleware; keep seller copy machine-shaped.
 - Base USDC contract commonly used by sellers: `0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913`.
 
