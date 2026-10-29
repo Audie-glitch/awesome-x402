@@ -80,6 +80,7 @@ These are **not** x402 products. They show what agents star right now (skills pa
 
 - Pair Cloudflare Workers (or Node/Hono) with x402 payment middleware; keep seller copy machine-shaped.
 - Base USDC contract commonly used by sellers: `0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913`.
+- [x402 Launch Fix](https://x402-launch-fix.github.io/) — copy-paste curl self-check for seller routes (GET/HEAD 404 vs POST 402, literal `:id` paths, testnet-only accepts, v1/v2 mismatch, 400/401 before the 402). Paid audit/fix optional (USDC on Base). Disclosure: my project.
 
 ## Contributing
 
