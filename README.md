@@ -46,6 +46,7 @@ Expect unpaid `GET` → **HTTP 402** with a payment challenge. Hosts on Cloudfla
 
 | API | Price (approx) | Chain | Auth | HTTPS | CORS | Description |
 |-----|----------------|-------|------|-------|------|-------------|
+| [AuthiChain Signal `/discovery`](https://signal.authichain.com/api/x402/discovery) | $0.01 USDC | Base | x402 | Yes | * | Ranked Base launchpad tape for agents (last rejections, LP, bytecode). Unpaid GET returns HTTP 402. Paper market data, not a broadcast order. Offer card: https://signal.authichain.com/offer |
 | [Spot FX `/fx`](https://api.premiumrewards.vip/fx?from=USD&to=EUR&amount=100) | $0.01 USDC | Base | x402 | Yes | * | ECB-spot-style FX check (Clear-to-Send) |
 | [Pulse `/check`](https://pulse.premiumrewards.vip/check) | $0.005 USDC | Base | x402 | Yes | * | Tiny pre-spend probe before a larger buy |
 | [Shop landing](https://premiumrewards.vip/) | free door | — | — | Yes | * | Human-readable entry; paid paths are the `402`s above |
