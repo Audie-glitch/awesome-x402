@@ -48,7 +48,7 @@ Expect unpaid `GET` → **HTTP 402** with a payment challenge. Hosts on Cloudfla
 |-----|----------------|-------|------|-------|------|-------------|
 | [Spot FX `/fx`](https://api.premiumrewards.vip/fx?from=USD&to=EUR&amount=100) | $0.01 USDC | Base | x402 | Yes | * | ECB-spot-style FX check (Clear-to-Send) |
 | [Pulse `/check`](https://pulse.premiumrewards.vip/check) | $0.005 USDC | Base | x402 | Yes | * | Tiny pre-spend probe before a larger buy |
-| [Chain Hunter On-Chain Oracle](https://alcohol-congratulations-filters-acres.trycloudflare.com/.well-known/x402.json) | $0.005-$0.05 USDC | Base, Solana | x402 | Yes | * | Read-only Solana token rug-risk, EVM gas/RPC pulse, Stellar account health, QUBO solver, anti-honeypot simulation and a code sandbox. Free manifest at the link. |
+| [Chain Hunter On-Chain Oracle](https://alcohol-congratulations-filters-acres.trycloudflare.com/.well-known/x402.json) | $0.01-$0.15 USDC | Base, Solana | x402 | Yes | * | Read-only on-chain data plus NIM-backed defensive code review and verified code fix, anti-honeypot simulation and a code sandbox. Free manifest at the link. |
 | [Shop landing](https://premiumrewards.vip/) | free door | — | — | Yes | * | Human-readable entry; paid paths are the `402`s above |
 
 \* CORS: agent HTTP clients usually do not need browser CORS; treat as n/a for mute agent buyers.
